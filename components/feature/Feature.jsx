@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import cab from "@/public/images/cab.svg"
+import cab from "@/public/images/cab.png"
 function Feature() {
   return (
     <div className='flex justify-evenly flex-wrap   '>
