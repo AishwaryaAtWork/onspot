@@ -8,6 +8,7 @@ import Card from './Card';
 
 function Testimonial() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentClient, setCurrentClient] = useState(data[0]); 
 
   const sliderSettings = {
     dots: false,
@@ -17,7 +18,10 @@ function Testimonial() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    beforeChange: (current, next) => setCurrentSlide(next),
+    beforeChange: (current, next) => {
+      setCurrentSlide(next);
+      setCurrentClient(data[(next + 1) % data.length]);
+    },
     responsive: [
       {
         breakpoint: 1024,
@@ -39,11 +43,18 @@ function Testimonial() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % data.length);
-    }, 3000);
+    }, 1000);
 
     return () => clearInterval(interval);
   }, []);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1 ) % data.length);
+      setCurrentClient(data[currentSlide]);
+    }, 1000);
 
+    return () => clearInterval(interval);
+  }, [currentSlide, data]);
   return (
     <div className=' flex flex-col gap-9 '>
     <p className='text-center text-[3rem] font-semibold leading-normal'>Our Happy Clients</p>
@@ -61,7 +72,7 @@ function Testimonial() {
       </Slider>
       <div className='text-center mt-4'>
         <p className='text-xl font-semibold text-gray-800'>
-          {data[currentSlide].name}
+        {`${currentClient.name}`}
         </p>
       </div>
     </div>
