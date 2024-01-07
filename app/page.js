@@ -1,4 +1,5 @@
 import Feature from "@/components/feature/Feature";
+import Footer from "@/components/footer/Footer";
 import Services from "@/components/services/Services";
 import Testimonial from "@/components/testimonial/Testimonial";
 
@@ -9,6 +10,7 @@ export default function Home() {
     <Feature/>
     <Services/>
     <Testimonial/>
+    <Footer/>
    </main>
   )
 }
