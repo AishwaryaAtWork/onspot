@@ -56,7 +56,7 @@ function Testimonial() {
     return () => clearInterval(interval);
   }, [currentSlide]);
   return (
-    <div className=' flex flex-col gap-9 '>
+    <div className=' flex flex-col gap-9 mb-16 '>
     <p className='text-center text-[3rem] font-semibold leading-normal'>Our Happy Clients</p>
     <div className='w-[96vw]  px-7 flex flex-col  '>
       <Slider {...sliderSettings} className=' border-3 flex justify-center items-center border-[black]   '>
