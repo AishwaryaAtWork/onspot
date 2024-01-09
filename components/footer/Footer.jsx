@@ -21,7 +21,7 @@ function Footer() {
             <div className='w-[30rem] rounded-2xl flex  flex-col gap-7 border-2 border-white p-4 h-[15rem]'>
                 <div className='text-[1.6rem] font-semibold' >Take a ride with us</div>
                 <div className='text-[0.8rem]'>Subscribe to be the first to know about our new trips and additional promotions</div>
-                <div class="relative flex">
+                <div className="relative flex">
                     <input type="email" name="" placeholder='Email Address' id="" className=" w-full text-black px-4 text-sm py-3 outline-none rounded-full" />
                     <button className="absolute right-10 top-[4px] -mr-8 border-[black] bg-black border-2 px-5 py-1 rounded-full">Subscribe</button>
                 </div>
