@@ -1,7 +1,7 @@
 .tour{
-    background-image: url('../public/images/tour.svg');
+    background-image: url('../public/images/tour.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
    
     
 }
