@@ -17,7 +17,7 @@ function Tour() {
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 7000,
     beforeChange: (current, next) => {
       setCurrentSlide(next);
      
