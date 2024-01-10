@@ -1,0 +1,4 @@
+.glass-container {
+    background: rgba(255, 255, 255, 0.2); /* Adjust the alpha channel for opacity */
+    backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
+  }
