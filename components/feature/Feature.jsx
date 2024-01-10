@@ -19,8 +19,8 @@ function Feature() {
             </div>
             <button className='border-2 mt-4 border-[#003C82] w-56 font-medium text-[#003C82] text-2xl rounded-full p-[16px]'>Book Now</button>
         </div>
-        <div className=' p-4 '>
-            <Image className='mt-5 border-2 p-4 rounded-3xl' src={cab}  alt=''/>
+        <div className=' flex justify-center items-center m-4 '>
+            <div className='border-2 p-4 border-black rounded-3xl mt-4 '><Image className=' border-2  rounded-3xl transform transition-all duration-200  hover:scale-105 ' src={cab}  alt=''/></div>
         </div>
     </div>
   )
