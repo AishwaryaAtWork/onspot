@@ -1,0 +1,20 @@
+.first{
+    background-image: url('../public//images/tour.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.second{
+    background-image: url('../public//images/memories/second.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.third{
+    background-image: url('../public//images/memories/third.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.forth{
+    background-image: url('../public//images/memories/forth.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
