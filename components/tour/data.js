@@ -3,7 +3,7 @@ export const data = [
         id:1,
         location: "Delhi",
         detail:"11 day trip",
-        from: "hyderabad",
+        from: "arunachal pardesh",
         to:"Noida",
     },
     {
