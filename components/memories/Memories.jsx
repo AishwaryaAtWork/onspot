@@ -3,7 +3,7 @@ import "@/styles/memories.css"
 function Memories() {
   return (
     <div className='flex flex-col gap-1 mb-3'>
-        <p className='text-[2rem] text-center font-semibold'>Booking Memories</p>
+        <p className='text-[3rem] text-center font-semibold'>Booking Memories</p>
     <div className='flex justify-center flex-wrap gap-5 p-4'>
          <div className='border-2  rounded-2xl border-[#003C82] p-5 '>
             <div className='first text-white h-[24rem] xl:h-[41rem] w-[19rem] xl:w-[17rem] flex flex-col rounded-xl  justify-end p-8 transform transition-all duration-200  hover:scale-105'>
