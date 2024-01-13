@@ -1,9 +1,9 @@
-.home{
-  background-image: url('../public/images/landing.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-   
+.home {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url('../public/images/landing.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .glass-container {
     background: rgba(255, 255, 255, 0.2); /* Adjust the alpha channel for opacity */
     backdrop-filter: blur(5px); /* Adjust the blur amount as needed */
