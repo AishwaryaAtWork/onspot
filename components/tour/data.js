@@ -40,5 +40,12 @@ export const data = [
         detail:"11 day trip",
         from: "Delhi",
         to:"Noida",
+    },
+    {
+        id:7,
+        location: "Delhi",
+        detail:"13 day trip",
+        from: "Delhi",
+        to:"goa",
     }
 ]
