@@ -11,7 +11,7 @@ function Hero() {
    }
   return ( 
     <div className=' home  w-full h-[45rem] md:h-[40rem]  xl:h-[40rem] 2xl:h-[40rem] gap-8 flex flex-col     '>
-      <div className='border-2  mb-3'>
+      <div className='  mb-3'>
       <Navbar/>
       </div>
       <div className='p-16 flex flex-col justify-center items-center'>
