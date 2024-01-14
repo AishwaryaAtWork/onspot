@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-between items-center p-5 relative">
-      <Image src={logo} alt="" />
+      <Image src={logo} alt="" className=' h-16  md:h-auto xl:h-auto' />
 
       <div className="md:hidden">
         {/* Hamburger Icon */}
