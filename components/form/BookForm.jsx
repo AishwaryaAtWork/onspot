@@ -31,7 +31,7 @@ const BookForm = ({ setShowOrderForm }) => {
           <input
             type="text"
             id="name"
-            className="w-full p-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+            className="w-full p-2 border-2 rounded-md  outline-none  border-black "
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
@@ -46,7 +46,7 @@ const BookForm = ({ setShowOrderForm }) => {
             <input
               type="text"
               id="pickupLocation"
-              className="w-full p-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+              className="w-full p-2 border-2 rounded-md  outline-none  border-black "
               value={pickupLocation}
               onChange={(e) => setPickupLocation(e.target.value)}
               required
@@ -60,7 +60,7 @@ const BookForm = ({ setShowOrderForm }) => {
             <input
               type="email"
               id="destinationLocation"
-              className="w-full p-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+              className="w-full p-2 border-2 rounded-md  outline-none  border-black "
               value={destinationLocation}
               onChange={(e) => setDestinationLocation(e.target.value)}
               required
@@ -76,7 +76,7 @@ const BookForm = ({ setShowOrderForm }) => {
             <input
               type="text"
               id="pickupLocation"
-              className="w-full p-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+              className="w-full p-2 border-2 rounded-md  outline-none  border-black "
               value={pickupLocation}
               onChange={(e) => setPickupLocation(e.target.value)}
               required
@@ -90,7 +90,7 @@ const BookForm = ({ setShowOrderForm }) => {
             <input
               type="text"
               id="destinationLocation"
-              className="w-full p-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+              className="w-full p-2 border-2 rounded-md  outline-none  border-black "
               value={destinationLocation}
               onChange={(e) => setDestinationLocation(e.target.value)}
               required
@@ -105,7 +105,7 @@ const BookForm = ({ setShowOrderForm }) => {
             <input
               type="text"
               id="passengerCount"
-              className="w-full p-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+              className="w-full p-2 border-2 rounded-md  outline-none  border-black "
               value={passengerCount}
               onChange={(e) => setPassengerCount(e.target.value)}
               required
@@ -113,13 +113,13 @@ const BookForm = ({ setShowOrderForm }) => {
           </div>
 
           <div className=" mb-7 flex justify-between flex-col w-full">
-            <label htmlFor="selectedDate" className="block text-white text-center  font-bold mb-2">
+            <label htmlFor="selectedDate" className="block text-white sm:text-left    text-center font-bold mb-2">
               Date
             </label>
             <input
               type="date"
               id="selectedDate"
-              className="w-full p-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+              className="w-full p-2 border-2 rounded-md  outline-none  border-black "
               value={selectedDate}
               onChange={(e) => setSelectedDate(e.target.value)}
               required
@@ -129,14 +129,14 @@ const BookForm = ({ setShowOrderForm }) => {
         <div className='flex gap-4'>
           <button
             type="submit"
-            className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
+            className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600  outline-none "
           >
             Submit
           </button>
           <button
             onClick={() => { setShowOrderForm(false) }}
             type="submit"
-            className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
+            className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600  outline-none "
           >
             cancel
           </button>
