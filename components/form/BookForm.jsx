@@ -25,6 +25,21 @@ const BookForm = ({setShowOrderForm}) => {
     <div className="min-w-[270px] max-w-[700px]   absolute  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  w-1/2 mx-auto z-20  p-4  bg-[#003C82]  rounded-md">
       <form onSubmit={handleSubmit}>
         <div className=" mb-7">
+          <label htmlFor="name" className="block text-white font-bold mb-2">
+            Name
+          </label>
+          <input
+            type="text"
+            id="name"
+            className="w-full p-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
+        </div>
+        <div className='flex flex-col md:flex-row xl:flex-row 2xl:flex-row gap-0  md:gap-4 xl:gap-4 2xl:gap-4 '>
+
+        <div className=" mb-7 w-full">
           <label htmlFor="pickupLocation"  className="block text-white font-bold mb-2">
             Pickup Location
           </label>
@@ -38,7 +53,7 @@ const BookForm = ({setShowOrderForm}) => {
           />
         </div>
 
-        <div className=" mb-7">
+        <div className=" mb-7 w-full">
           <label htmlFor="destinationLocation" className="block text-white font-bold mb-2">
             Destination Location
           </label>
@@ -51,20 +66,8 @@ const BookForm = ({setShowOrderForm}) => {
             required
           />
         </div>
-
-        <div className=" mb-7">
-          <label htmlFor="name" className="block text-white font-bold mb-2">
-            Name
-          </label>
-          <input
-            type="text"
-            id="name"
-            className="w-full p-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
-          />
         </div>
+
 
         <div className=" mb-7">
           <label htmlFor="passengerCount" className="block text-white font-bold mb-2">
@@ -93,7 +96,7 @@ const BookForm = ({setShowOrderForm}) => {
             required
           />
         </div>
-        <div className='flex gap-8'>
+        <div className='flex gap-4'>
         <button
           type="submit"
           className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
