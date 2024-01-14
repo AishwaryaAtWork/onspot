@@ -1,5 +1,5 @@
 .home {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)), url('../public/images/landing.jpg');
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url('../public/images/landing.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
