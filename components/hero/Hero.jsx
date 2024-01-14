@@ -4,7 +4,7 @@ import Link from 'next/link'
 function Hero() {
   return ( 
     <div className=' home  w-full h-[40rem]  flex flex-col justify-center items-center  p-16   '>
-        <div className=' glass-container z-0 border-2 h-[full] text-black  xl:text-white 2xl:text-white border-black rounded-3xl flex flex-col text-center gap-2 p-8'>
+        <div className=' glass-container z-0 border-2 h-[full] text-white  xl:text-white 2xl:text-white border-black rounded-3xl flex flex-col text-center gap-2 p-8'>
             <p className='text-[1.5rem] md:text-[2rem] xl:text-[2rem] font-semibold'>Easy and Cheap Intercity Travelling With Us! Call and Get Your Ride On Spot.</p>
             <div> 
                 <p className='text-[1rem] font-semibold'>Call and Get Your Ride On Spot.</p>
