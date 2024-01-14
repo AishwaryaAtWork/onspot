@@ -22,9 +22,9 @@ const BookForm = ({ setShowOrderForm }) => {
   };
 
   return (
-    <div className="min-w-[300px] max-w-[800px]   absolute  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  w-1/2 mx-auto z-20  p-4  bg-[#003C82]  rounded-md">
+    <div className="min-w-[300px] max-w-[800px]   fixed   top-[48%] md:top-[55%] xl:top-[58%] 2xl:top-[52%]  left-1/2 -translate-x-1/2 -translate-y-1/2  w-1/2 mx-auto   z-30  p-4  bg-[#003C82]  rounded-md">
       <form onSubmit={handleSubmit}>
-        <div className=" mb-7">
+        <div className=" mb-4">
           <label htmlFor="name" className="block text-white font-bold mb-2">
             Name
           </label>
@@ -39,7 +39,7 @@ const BookForm = ({ setShowOrderForm }) => {
         </div>
         <div className='flex flex-col md:flex-row xl:flex-row 2xl:flex-row gap-0  md:gap-4 xl:gap-4 2xl:gap-4 '>
 
-          <div className=" mb-7 w-full">
+          <div className=" mb-4 w-full">
             <label htmlFor="pickupLocation" className="block text-white font-bold mb-2">
               Phone Number
             </label>
@@ -53,7 +53,7 @@ const BookForm = ({ setShowOrderForm }) => {
             />
           </div>
 
-          <div className=" mb-7 w-full">
+          <div className=" mb-4 w-full">
             <label htmlFor="destinationLocation" className="block text-white font-bold mb-2">
               Email
             </label>
@@ -69,7 +69,7 @@ const BookForm = ({ setShowOrderForm }) => {
         </div>
         <div className='flex flex-col md:flex-row xl:flex-row 2xl:flex-row gap-0  md:gap-4 xl:gap-4 2xl:gap-4 '>
 
-          <div className=" mb-7 w-full">
+          <div className=" mb-4 w-full">
             <label htmlFor="pickupLocation" className="block text-white font-bold mb-2">
               Pickup Location
             </label>
@@ -83,7 +83,7 @@ const BookForm = ({ setShowOrderForm }) => {
             />
           </div>
 
-          <div className=" mb-7 w-full">
+          <div className=" mb-4 w-full">
             <label htmlFor="destinationLocation" className="block text-white font-bold mb-2">
               Destination Location
             </label>
@@ -98,7 +98,7 @@ const BookForm = ({ setShowOrderForm }) => {
           </div>
         </div>
         <div className='flex gap-4 '>
-          <div className=" mb-7 w-full">
+          <div className=" mb-4 w-full">
             <label htmlFor="passengerCount" className="block text-white font-bold mb-2">
               Number of Passengers
             </label>
@@ -112,7 +112,7 @@ const BookForm = ({ setShowOrderForm }) => {
             />
           </div>
 
-          <div className=" mb-7 flex justify-between flex-col w-full">
+          <div className=" mb-4 flex justify-between flex-col w-full">
             <label htmlFor="selectedDate" className="block text-white sm:text-left    text-center font-bold mb-2">
               Date
             </label>

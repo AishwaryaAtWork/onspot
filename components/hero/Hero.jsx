@@ -10,11 +10,9 @@ function Hero() {
     setShowOrderForm(true)
    }
   return ( 
-    <div className=' home  w-full h-[45rem] md:h-[40rem]  xl:h-[40rem] 2xl:h-[40rem] gap-8 flex flex-col     '>
-      <div className='  mb-3'>
-      <Navbar/>
-      </div>
-      <div className='p-16 flex flex-col justify-center items-center'>
+    <div className=' home  w-full h-[40rem] justify-center items-center   gap-8 flex flex-col     '>
+      
+      <div className='p-16 flex flex-col justify-center items-center '>
         <div className=' glass-container w-full   border-2 h-[full] text-white  xl:text-white 2xl:text-white border-black rounded-3xl flex flex-col text-center gap-2 p-8'>
             <p className='text-[1.5rem] md:text-[2rem] xl:text-[2rem] font-semibold'>Easy and Cheap Intercity Travelling With Us! Call and Get Your Ride On Spot.</p>
             <div> 

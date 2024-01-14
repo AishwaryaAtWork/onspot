@@ -18,8 +18,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center p-5 relative">
-      <Image src={logo} alt="" className=' h-16  md:h-auto xl:h-auto' />
+    <div className="flex justify-between  w-full  z-30  top-0 bg-black bg-opacity-50 backdrop-filter backdrop-blur-md h-[auto] items-center p-5 fixed">
+      <Image src={logo} alt="" height={60} className='  h-[3rem]  md:h-auto xl:h-auto' />
 
       <div className="md:hidden">
         {/* Hamburger Icon */}
@@ -45,7 +45,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="md:hidden absolute top-0 z-50 right-0 h-screen w-64 bg-[#003C82] p-5">
+          <div className="md:hidden absolute top-0     right-0 h-screen w-64 bg-[#003C82] p-5">
             <button
               className="text-white absolute top-2 right-2"
               onClick={closeMenu}
@@ -68,9 +68,9 @@ const Navbar = () => {
             </button>
 
             <nav className="flex flex-col gap-4 text-white">
-              <Link href="/">Home</Link>
-              <Link href="/">Blog</Link>
-              <Link href="/">Contact Us</Link>
+              <Link onClick={closeMenu} href="/">Home</Link>
+              <Link onClick={closeMenu} href="/blog">Blog</Link>
+              <Link onClick={closeMenu} href="/contact">Contact Us</Link>
             </nav>
           </div>
         )}
@@ -78,13 +78,13 @@ const Navbar = () => {
 
       {/* Desktop Menu */}
       <nav className="gap-6 border-2 md:flex xl:flex 2xl:flex hidden text-white rounded-full px-4 border-white font-bold py-3">
-        <Link className="mr-2 hover:text-[#003C82]" href="/">
+        <Link  className="mr-2 hover:text-[#003C82]" href="/">
           Home
         </Link>
-        <Link className="mr-2 hover:text-[#003C82]" href="/">
+        <Link className="mr-2 hover:text-[#003C82]" href="/blog">
           Blog
         </Link>
-        <Link className="mr-2 hover:text-[#003C82]" href="/">
+        <Link className="mr-2 hover:text-[#003C82]" href="/contact">
           Contact Us
         </Link>
       </nav>
