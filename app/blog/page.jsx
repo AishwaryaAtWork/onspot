@@ -1,9 +1,19 @@
+import BlogList from '@/components/blog/BlogList'
+
 import React from 'react'
 
-function Blog() {
+function BlogPage() {
   return (
-    <div className='w-full h-[80vh] flex justify-center text-2xl items-center'>Blog</div>
+    <div className='w-full  py-24  md:py-20 lg:py-28  h-[auto]'>
+
+      <div className=''>
+        <p className=' text-center text-[3rem] font-bold'> Blogs</p>
+        <div >
+        <BlogList/>
+        </div>
+      </div>
+    </div>
   )
 }
 
-export default Blog
+export default BlogPage
