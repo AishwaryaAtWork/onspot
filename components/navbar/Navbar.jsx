@@ -45,7 +45,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="md:hidden absolute top-0     right-0 h-screen w-64 bg-[#003C82] p-5">
+          <div className="md:hidden absolute top-0     right-0 h-screen w-64 bg-black bg-opacity-50 backdrop-filter backdrop-blur-md p-5">
             <button
               className="text-white absolute top-2 right-2"
               onClick={closeMenu}
