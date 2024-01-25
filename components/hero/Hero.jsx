@@ -2,8 +2,6 @@
 import React, { useState } from 'react'
 import "@/styles/hero.css"
 import Link from 'next/link'
-import BookForm from '../form/BookForm';
-import Navbar from '../navbar/Navbar';
 function Hero() {
  
   const handleFilter = () => {
@@ -21,7 +19,7 @@ function Hero() {
             </div>
         </div>
        
-       <Link  href={"#BookForm"}  className='p-4 w-[12rem] text-xl text-center -mt-[2rem] z-10   bg-[#003C82] text-white  border-2 h  rounded-full font-medium    '>Book now</Link>
+       <Link  href={"#BookForm"}  className='p-4 w-[12rem] text-xl text-center -mt-[2rem] z-10 bg-[#003C82] text-white  border-2 h  rounded-full font-medium'>Book now</Link>
       
        
         </div>
