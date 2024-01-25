@@ -2,6 +2,7 @@ import React from 'react'
 import "@/styles/Tour.css"
 import locatin from "@/public/images/location.svg"
 import Image from 'next/image'
+import Link from 'next/link'
 function TourCard({location,detail,from,to}) {
     
   return (
@@ -14,7 +15,7 @@ function TourCard({location,detail,from,to}) {
                     <p className='text-sm text-white'>{detail}</p>
                     <p className='text-[1.8rem] w-[100%] text-white'>{from} to {to}</p>
                 </div>
-                <button className='p-2 w-40 text-2xl mb-4 text-white font-medium border-2 border-white rounded-full'>Book Now</button>
+                <Link  href={"#BookForm"} className='p-2 w-40 text-2xl text-center mb-4 text-white font-medium border-2 border-white rounded-full'>Book Now</Link>
             </div>
         </div>
     </div>

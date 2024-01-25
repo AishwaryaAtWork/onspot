@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import cab from "@/public/images/cab.png"
+import Link from 'next/link'
 function Feature() {
   return (
     <div className='flex justify-evenly mb-16  flex-wrap '>
@@ -17,7 +18,7 @@ function Feature() {
                     <p>Bookings</p>
                 </div>
             </div>
-            <button className='border-2 mt-4 border-[#003C82] w-56 font-medium text-[#003C82] text-2xl rounded-full p-[16px]'>Book Now</button>
+            <Link  href={"#BookForm"} className='border-2 mt-4 border-[#003C82] text-center w-56 font-medium text-[#003C82] text-2xl rounded-full p-[16px]'>Book Now</Link>
         </div>
         <div className=' flex justify-center items-center m-4 '>
             <div className='border-2 p-4 border-black rounded-3xl mt-4 '><Image className=' border-2  rounded-3xl transform transition-all duration-200  hover:scale-105 ' src={cab}  alt=''/></div>

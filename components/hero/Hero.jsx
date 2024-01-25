@@ -5,12 +5,12 @@ import Link from 'next/link'
 import BookForm from '../form/BookForm';
 import Navbar from '../navbar/Navbar';
 function Hero() {
-  const [showOrderForm , setShowOrderForm] = useState(false);
+ 
   const handleFilter = () => {
-    setShowOrderForm(true)
+   
    }
   return ( 
-    <div className=' home  w-full h-[40rem] justify-center items-center   gap-8 flex flex-col     '>
+    <div className=' home  w-full h-[60rem] xl:h-[40rem] 2xl:h-[40rem] justify-center items-center   gap-8 flex flex-col     '>
       
       <div className='p-16 flex flex-col justify-center items-center '>
         <div className=' glass-container w-full   border-2 h-[full] text-white  xl:text-white 2xl:text-white border-black rounded-3xl flex flex-col text-center gap-2 p-8'>
@@ -21,8 +21,8 @@ function Hero() {
             </div>
         </div>
        
-       <button  onClick={handleFilter} className='p-4 w-[12rem] text-xl text-center -mt-[2rem] z-10   bg-[#003C82] text-white  border-2 h  rounded-full font-medium    '>Book now</button>
-       {showOrderForm && <BookForm setShowOrderForm={setShowOrderForm} />}
+       <Link  href={"#BookForm"}  className='p-4 w-[12rem] text-xl text-center -mt-[2rem] z-10   bg-[#003C82] text-white  border-2 h  rounded-full font-medium    '>Book now</Link>
+      
        
         </div>
     </div>

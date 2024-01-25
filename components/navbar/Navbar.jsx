@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-between  w-full  z-30  top-0 bg-black bg-opacity-50 backdrop-filter backdrop-blur-md h-[auto] items-center p-5 fixed">
-      <Image src={logo} alt="" height={60} className='  h-[3rem]  md:h-auto xl:h-auto' />
+      <Image src={logo} alt="" height={45} className='  h-[3rem]  md:h-auto xl:h-auto' />
 
       <div className="md:hidden">
         {/* Hamburger Icon */}
