@@ -8,8 +8,9 @@ function Card({ name, review, avatar }) {
       <div className="bg-[#ECF5FF] rounded-lg text-sm font-normal leading-normal p-4">
         <p className="text-gray-800">{review}</p>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center gap-5 ">
         <Image src={avatar} alt={`Avatar of ${name}`} width={80} height={80} className="rounded-full" />
+        <p className=' flex  justify-center items-center '> {name}</p>
       </div>
     </div>
   );

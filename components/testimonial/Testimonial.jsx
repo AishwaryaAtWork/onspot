@@ -70,11 +70,11 @@ function Testimonial() {
           />
         ))}
       </Slider>
-      <div className='text-center mt-4'>
+      {/* <div className='text-center mt-4'>
         <p className='text-xl font-semibold text-gray-800'>
         {`${currentClient.name}`}
         </p>
-      </div>
+      </div> */}
     </div>
     </div>
   );

@@ -17,7 +17,7 @@ function Tour() {
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
     beforeChange: (current, next) => {
       setCurrentSlide(next);
      
@@ -43,7 +43,7 @@ function Tour() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % data.length);
-    }, 3000);
+    }, 1000);
 
     return () => clearInterval(interval);
   }, []);
