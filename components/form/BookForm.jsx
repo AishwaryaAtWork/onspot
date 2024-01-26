@@ -17,7 +17,7 @@ const BookForm = ({ setShowOrderForm }) => {
     // Handle form submission logic here
     
     if (!Object.values(details).every(Boolean)) {
-      alert("Please fill in all the required fields.");
+      alert("Please fill in all the fields.");
       return;
     }
   
@@ -29,6 +29,10 @@ const BookForm = ({ setShowOrderForm }) => {
               console.log(result.text);
               formRef.current.reset();
               alert("Form submitted succefully");
+              setDetails({
+                name : '', email: '', phoneNumber: '', pickupLocation: '', destinationLocation: '', 
+                passengerCount: '', selectedDate: '', selectedTime: ''
+              })
             },
             (error) => {
           console.log(error.text);
@@ -167,7 +171,7 @@ const BookForm = ({ setShowOrderForm }) => {
             Submit
           </button>
           <button
-            // onClick={() => { setShowOrderForm(false) }}
+            onClick={() => { setShowOrderForm(false) }}
             type="submit"
             className="hover:bg-[#ECF5FF] text-black px-4 py-2 rounded-md   outline-none "
           >
