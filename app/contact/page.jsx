@@ -26,7 +26,7 @@ export default function Example() {
 
     emailjs
       .sendForm(
-        "service_skimveu",
+        "service_57or3ml",
         "template_s6qvaaq",
         formRef.current,
         process.env.NEXT_PUBLIC_EMAILJS_API_KEY
