@@ -22,7 +22,7 @@ const BookForm = ({ setShowOrderForm }) => {
     }
   
     emailjs
-    .sendForm("service_57or3ml", "template_d1scq1f", formRef.current, process.env.NEXT_PUBLIC_EMAILJS_API_KEY
+    .sendForm("service_57or3ml", "template_d1scq1f", formRef.current, "UO4Ts9Kc6kOynEHjw"
       )
       .then(
           (result) => {
